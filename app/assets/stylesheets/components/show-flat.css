@@ -1,0 +1,72 @@
+.img-bg {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  z-index: -20;
+}
+
+.flat-content {
+  position: absolute;
+  top: 300px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  display: flex;
+}
+
+.flat-show-left, .flat-show-right {
+  margin: 10px;
+}
+
+.flat-show-box {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.flat-show-left {
+  width: 65%;
+  height: 500px;
+}
+
+.flat-show-right {
+  flex-grow: 1;
+  height: 300px;
+  right: 0;
+}
+
+.flat-title {
+  padding: 20px;
+  font-size: 40px;
+}
+
+.flat-address{
+  padding: 20px;
+  opacity: 0.6;
+}
+
+.flat-description {
+  padding: 20px;
+  line-height: 1.7rem;
+}
+
+#details, #share {
+  display: flex;
+}
+
+#details .c-icons, #share ul {
+  position: absolute;
+  right: 35px;
+}
+
+#share li {
+  display: inline;
+  margin-right: 10px;
+}

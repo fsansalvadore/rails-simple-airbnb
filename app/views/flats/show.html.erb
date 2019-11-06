@@ -1,0 +1,60 @@
+<div class="img-bg" style="background-image: url('<%= @flat.image_url %>')"></div>
+<div class="container flat-content">
+  <div class="flat-show-left">
+    <div class="flat-show-box">
+      <h1 class="flat-title"><%= @flat.name %></h1>
+      <hr>
+      <p class="flat-address"><%= @flat.address %></p>
+      <hr>
+      <p class="flat-description"><%= @flat.description %></p>
+    </div>
+  </div>
+  <div class="flat-show-right">
+    <div class="flat-show-box">
+      <form>
+        <h5>Book this place!</h5>
+        <div class="form-group">
+          <label class="sr-only" for="inlineFormInputGroup"><%= Date.today %></label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">From:</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="<%= Date.today %>">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inlineFormInputGroup"><%= Date.tomorrow %></label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">To:</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="<%= Date.tomorrow %>">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success col-12">Book now</button>
+      </form>
+    </div>
+    <div id="details" class="flat-show-box">
+      <h5>Details</h5>
+      <div class="c-icons">
+        <div class="c-icon">
+          <i class="material-icons">people</i>
+          <p><%= @flat.number_of_guests %></p>
+        </div>
+        <div class="c-icon">
+          <i class="material-icons">euro</i>
+          <p><%= @flat.price_per_night %></p>
+        </div>
+      </div>
+    </div>
+    <div id="share" class="flat-show-box">
+      <h6>Share</h6>
+      <div class="c-icons">
+        <ul>
+          <li><i class="material-icons">mail</i></li>
+          <li><i class="material-icons">phone</i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+@import "/components/simple_form.css"; /* Using a string */
+@import "show-flat.css";
+
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.container {
+  margin-top: 56px;
+}
+
+.card hr {
+   margin: 0 !important;
+}
+
+.card-container {
+  margin-bottom: 30px;
+}
+
+.card-body {
+  background-color: #F8F9FA;
+}
+
+.c-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.c-icons {
+  padding-top: 60px !important;
+  display: flex !important;
+  float: left;
+  align-items: center;
+}
+
+.c-icon {
+  display: flex;
+  float: left !important;
+  width: 50px;
+  margin-right: 6px;
+}
+
+.c-icons p {
+  margin-left: 4px;
+}
+
+.form-style  {
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  margin-left: 8px;
+}

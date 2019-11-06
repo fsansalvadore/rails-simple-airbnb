@@ -14,3 +14,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+Unsplash.configure do |config|
+  config.application_access_key = "03521c1db0902583c991a69d2663bddd721f4d3ae20c9c637b0bcc5eb42d7a7a"
+  config.application_secret = "95d7dd845fef52608e2f8d931c48df5944e5bbe639a7c858e54bf75899cabb64"
+  config.application_redirect_uri = "https://your-application.com/oauth/callback"
+  config.utm_source = "alices_terrific_client_app"
+
+  # optional:
+  config.logger = MyCustomLogger.new
+end
